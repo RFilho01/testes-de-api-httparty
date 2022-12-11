@@ -22,7 +22,7 @@ jobs:
         
       - name: Instalar o cucumber
         run: gem install bundler cucumber
-      
+        
       - name: Executar smoke tests
         run: rake smoke
 

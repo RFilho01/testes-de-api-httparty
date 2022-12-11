@@ -26,7 +26,7 @@ jobs:
       - name: Executar smoke tests
         run: rake smoke
 
-      - name: Archive Report
+      - name: Archive Report Execution
       if: always()
       uses: actions/upload-artifact@v3
       with:

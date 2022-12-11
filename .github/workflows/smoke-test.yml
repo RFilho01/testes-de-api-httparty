@@ -26,8 +26,8 @@ jobs:
       - name: Instalar factory_bot
         run: gem install factory_bot
       
-      - name: loc
-        run: pwd
+      - name: list
+        run: ls
 
       - name: Executar smoke tests
         run: rake smoke

@@ -1,0 +1,24 @@
+name: Smoke Test
+
+on:
+  commit:
+    branches: [ master ]
+
+jobs:
+  RunTest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Instalar o ruby
+        - uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: '3.0'
+            bundler-cache: true
+      
+      - name: Instalar gems
+        - run: bundle install
+
+      - name: Executar smoke tests
+        - run: cucumber -t @smoke

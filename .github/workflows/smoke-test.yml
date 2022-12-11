@@ -20,6 +20,9 @@ jobs:
       - name: Instalar gems
         run: bundler install
         
+      - name: Instalar o cucumber
+        run: gem install bundler cucumber
+        
       - name: entrar na pasta features
         run: cd features 
       

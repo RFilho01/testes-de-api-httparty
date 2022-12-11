@@ -1,7 +1,7 @@
 name: Smoke Test
 
 on:
-  push:
+  pull_request:
     branches: [ master ]
 
 jobs:
@@ -22,15 +22,13 @@ jobs:
         
       - name: Instalar o cucumber
         run: gem install bundler cucumber
-        
-      - name: entrar na pasta features
-        run: cd features 
       
-      - name: executar o cucumber
-        run: cucumber --version
-      
-      - name: list
-        run: ls
-
       - name: Executar smoke tests
         run: rake smoke
+
+      - name: Archive Report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: report-execution
+        path: "**/reports/"

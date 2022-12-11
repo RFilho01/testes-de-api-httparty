@@ -1,6 +1,8 @@
-default: -p hml
+default: -p html_report -p hml
 
-#Ambientes
+# Ambientes
 prod: AMBIENTE=prod
 hml: AMBIENTE=hml
 
+# Report
+html_report: --format pretty -f html -o reports/report.html

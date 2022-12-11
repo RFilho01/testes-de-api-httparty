@@ -1,4 +1,4 @@
-default: -p html_report -p hml
+default: -p hml
 
 #Ambientes
 prod: AMBIENTE=prod

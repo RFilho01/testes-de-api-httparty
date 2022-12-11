@@ -19,12 +19,15 @@ jobs:
       
       - name: Instalar gems
         run: bundler install
+        
+      - name: Instalar o cucumber
+        run: gem install bundler cucumber
+        
+      - name: entrar na pasta features
+        run: cd features 
       
-      - name: Instalar cucumber
-        run: sudo apt-get install cucumber
-      
-      - name: Instalar factory_bot
-        run: gem install factory_bot
+      - name: executar o cucumber
+        run: cucumber --version
       
       - name: list
         run: ls

@@ -27,8 +27,8 @@ jobs:
         run: rake smoke
 
       - name: Archive Report Execution
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: report-execution
-        path: "**/reports/"
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: report-execution
+          path: "**/reports/"

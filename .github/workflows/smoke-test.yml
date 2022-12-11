@@ -27,7 +27,7 @@ jobs:
         run: cd features 
       
       - name: executar o cucumber
-        run: cucumber
+        run: cucumber --version
       
       - name: list
         run: ls

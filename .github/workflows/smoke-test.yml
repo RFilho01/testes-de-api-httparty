@@ -14,14 +14,14 @@ jobs:
       - name: Instalar o ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '2.7.2'
           bundler-cache: true
       
       - name: Instalar cucumber
         run: sudo apt-get install cucumber
       
       - name: Instalar factory_bot
-        run: gem install factory_bot_rails
+        run: gem install factory_bot
       
       - name: Instalar gems
         run: bundle install

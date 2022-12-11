@@ -17,6 +17,9 @@ jobs:
           ruby-version: '2.7.2'
           bundler-cache: true
       
+      - name: Instalar gems
+        run: bundler install
+      
       - name: Instalar cucumber
         run: sudo apt-get install cucumber
       
@@ -25,9 +28,6 @@ jobs:
       
       - name: loc
         run: pwd
-
-      - name: Instalar gems
-        run: bundler install
 
       - name: Executar smoke tests
         run: rake smoke

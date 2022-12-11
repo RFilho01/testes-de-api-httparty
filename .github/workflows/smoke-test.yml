@@ -18,7 +18,7 @@ jobs:
           bundler-cache: true
       
       - name: Instalar cucumber
-        run: apt-get install cucumber
+        run: sudo apt-get install cucumber
       
       - name: Instalar gems
         run: bundle install

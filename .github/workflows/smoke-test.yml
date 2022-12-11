@@ -23,8 +23,11 @@ jobs:
       - name: Instalar factory_bot
         run: gem install factory_bot
       
+      - name: loc
+        run: pwd
+
       - name: Instalar gems
-        run: bundle install
+        run: bundler install
 
       - name: Executar smoke tests
         run: cucumber -t @smoke

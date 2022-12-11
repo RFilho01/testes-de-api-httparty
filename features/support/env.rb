@@ -1,4 +1,4 @@
-require 'factory_bot'
+require 'factory_bot_rails'
 require 'faker'
 require 'httparty'
 require 'rspec'

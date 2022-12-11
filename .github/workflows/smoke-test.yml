@@ -17,6 +17,9 @@ jobs:
           ruby-version: '3.0'
           bundler-cache: true
       
+      - name: Instalar o cucumber
+        run: bundle install cucumber
+
       - name: Instalar gems
         run: bundle install
 

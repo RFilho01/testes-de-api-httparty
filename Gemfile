@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem 'cucumber'
-gem 'factory_bot'
+gem 'factory_bot', require: false
 gem 'faker'
 gem 'httparty'
 gem 'rspec'

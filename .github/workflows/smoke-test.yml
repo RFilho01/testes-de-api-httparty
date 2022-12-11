@@ -17,6 +17,9 @@ jobs:
           ruby-version: '3.0'
           bundler-cache: true
       
+      - name: Instalar cucumber
+        run: apt-get install cucumber
+      
       - name: Instalar gems
         run: bundle install
 

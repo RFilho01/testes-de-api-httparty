@@ -19,9 +19,6 @@ jobs:
       
       - name: Instalar gems
         run: bundler install
-      
-      - name: Instalar cucumber
-        run: sudo apt-get install cucumber
         
       - name: entrar na pasta features
         run: cd features 

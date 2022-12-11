@@ -22,6 +22,10 @@ jobs:
       
       - name: Instalar cucumber
         run: sudo apt-get install cucumber
+        
+      - name: test
+        run: cd features 
+        run: cucumber
       
       - name: Instalar factory_bot
         run: gem install factory_bot

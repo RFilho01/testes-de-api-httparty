@@ -4,5 +4,3 @@ default: -p html_report -p hml
 prod: AMBIENTE=prod
 hml: AMBIENTE=hml
 
-#Report
-html_report: --format pretty -f html -o reports/report.html

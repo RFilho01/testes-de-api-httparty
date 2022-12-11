@@ -12,13 +12,13 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Instalar o ruby
-        - uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
           with:
             ruby-version: '3.0'
             bundler-cache: true
       
       - name: Instalar gems
-        - run: bundle install
+        run: bundle install
 
       - name: Executar smoke tests
-        - run: cucumber -t @smoke
+        run: cucumber -t @smoke

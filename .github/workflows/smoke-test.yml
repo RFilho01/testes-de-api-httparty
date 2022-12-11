@@ -1,7 +1,7 @@
 name: Smoke Test
 
 on:
-  commit:
+  push:
     branches: [ master ]
 
 jobs:

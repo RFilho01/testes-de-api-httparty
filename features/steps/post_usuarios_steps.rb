@@ -1,5 +1,6 @@
 Dado('que tenho uma massa configurada para o endpoint Usuarios.post para o cenário {string}') do |type|
   @usuario ||= OpenStruct.new
+  binding.pry
   @usuario.payload = type.eql?('positivo') ? build(:usuario).usuario_payload : { }
 end
 

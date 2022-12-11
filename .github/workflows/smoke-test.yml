@@ -23,8 +23,8 @@ jobs:
       - name: Instalar factory_bot
         run: gem install factory_bot
       
-      - name: loc
-        run: pwd
+      - name: list
+        run: ls
 
       - name: Instalar gems
         run: bundler install

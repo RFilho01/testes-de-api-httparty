@@ -13,9 +13,9 @@ jobs:
 
       - name: Instalar o ruby
         uses: ruby/setup-ruby@v1
-          with:
-            ruby-version: '3.0'
-            bundler-cache: true
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
       
       - name: Instalar gems
         run: bundle install

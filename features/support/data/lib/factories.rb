@@ -1,6 +1,6 @@
 require 'faker'
 
-FactoryBot.define do
+FactoryGirl.define do
   factory :usuario, class: UsuarioModel do
     nome { Faker::Name.name }
     email { Faker::Internet.email }

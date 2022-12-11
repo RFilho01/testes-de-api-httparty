@@ -5,6 +5,8 @@ end
 
 Quando('enviar uma requisição para o endpoint Usuarios.post') do
   @usuario.response = usuarios.post_usuario(@usuario.payload)
+rescue StardardError => e
+  @usuario.error = e
 end
 
 Entao('Validar o retorno do endpoint Usuarios.post para o cenário {string}') do |type|

@@ -30,4 +30,4 @@ jobs:
         run: bundler install
 
       - name: Executar smoke tests
-        run: cucumber -t @smoke
+        run: rake smoke

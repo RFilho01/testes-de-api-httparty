@@ -2,7 +2,7 @@ name: Smoke Test - Agendado
 
 on:
   schedule:
-    - cron: "*/5 * * * 1-5"
+    - cron: "*/60 * * * 1-5"
 
 jobs:
   RunTest:
@@ -25,13 +25,6 @@ jobs:
         
       - name: Executar smoke tests
         run: rake smoke
-
-      - name: Archive Report Execution
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: report-execution
-          path: "**/reports/"
 
       - name: Slack notification - Success
         uses: rtCamp/action-slack-notify@v2
@@ -56,3 +49,4 @@ jobs:
           SLACK_MESSAGE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
           SLACK_TITLE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
           SLACK_USERNAME: FALHA
+          

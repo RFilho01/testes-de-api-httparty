@@ -1,8 +1,6 @@
-name: Smoke Test
+name: Smoke Test - Agendado
 
 on:
-  pull_request:
-    branches: [ master ]
   schedule:
     - cron: '*/5 * * * 1-5'
 

@@ -1,0 +1,36 @@
+name: Smoke Test - PR
+
+on:
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: '*/5 * * * 1-5'
+
+jobs:
+  RunTest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Instalar o ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
+          bundler-cache: true
+      
+      - name: Instalar gems
+        run: bundler install
+        
+      - name: Instalar o cucumber
+        run: gem install bundler cucumber
+        
+      - name: Executar smoke tests
+        run: rake smoke
+
+      - name: Archive Report Execution
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: report-execution
+          path: "**/reports/"

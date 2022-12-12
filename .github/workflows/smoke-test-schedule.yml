@@ -53,6 +53,6 @@ jobs:
           SLACK_CHANNEL: test-report
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://www.vhv.rs/dpng/d/431-4316378_error-icon-hope-for-justice-logo-hd-png.png
-          SLACK_MESSAGE: ':relógio: Testes Agendados executados com Falhas! :fire:'
-          SLACK_TITLE: ':relógio: Testes Agendados executados com Falhas! :fire:'
+          SLACK_MESSAGE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
+          SLACK_TITLE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
           SLACK_USERNAME: FALHA

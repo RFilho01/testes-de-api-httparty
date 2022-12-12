@@ -17,6 +17,6 @@ Entao('Validar o retorno do endpoint Usuarios.post para o cenário {string}') do
     expect(@usuario.response['message']).to eql('Cadastro realizado com sucesso')
     expect(@usuario.response['_id']).to be_an(String)
   else
-    expect(@usuario.response.code).to eql 500
+    expect(@usuario.response.code).to eql 400
   end
 end

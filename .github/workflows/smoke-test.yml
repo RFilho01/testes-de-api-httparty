@@ -10,7 +10,7 @@ jobs:
   RunTest:
     runs-on: ubuntu-latest
     container:
-      image: https://hub.docker.com/repository/docker/robertofilho01/automacao-lab
+      image: robertofilho01/automacao-lab:latest
 
     steps:
       - uses: actions/checkout@v3

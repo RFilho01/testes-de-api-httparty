@@ -1,4 +1,4 @@
-name: Smoke Test - Agendado
+name: Contract Tests - Scheduled
 
 on:
   schedule:
@@ -49,4 +49,3 @@ jobs:
           SLACK_MESSAGE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
           SLACK_TITLE: ':alarm_clock: Testes Agendados executados com Falhas! :fire:'
           SLACK_USERNAME: FALHA
-          

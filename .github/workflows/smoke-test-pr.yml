@@ -1,4 +1,4 @@
-name: Smoke Test - PR
+name: Contract Tests - PR
 
 on:
   pull_request:

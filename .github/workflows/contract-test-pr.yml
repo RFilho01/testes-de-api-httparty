@@ -23,8 +23,8 @@ jobs:
       - name: Instalar o cucumber
         run: gem install bundler cucumber
         
-      - name: Executar smoke tests
-        run: rake smoke
+      - name: Executar contract tests
+        run: rake contract
 
       - name: Slack notification - Success
         uses: rtCamp/action-slack-notify@v2

@@ -34,8 +34,8 @@ jobs:
           SLACK_CHANNEL: test-report
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://www.clipartmax.com/png/middle/179-1795386_patient-success-success-icon-png.png
-          SLACK_MESSAGE: ':relógio: Testes Agendados executados com Sucesso! :white_check_mark:'
-          SLACK_TITLE: ':relógio: Testes Agendados executados com Sucesso! :white_check_mark:'
+          SLACK_MESSAGE: ':alarm_clock: Testes Agendados executados com Sucesso! :white_check_mark:'
+          SLACK_TITLE: ':alarm_clock: Testes Agendados executados com Sucesso! :white_check_mark:'
           SLACK_USERNAME: SUCESSO
         
       - name: Slack notification - Falha

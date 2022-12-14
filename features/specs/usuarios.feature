@@ -1,5 +1,5 @@
 #language: pt
-@smoke
+@contract
 Funcionalidade: Usuarios
   validar comportamento da API Usuarios
 
